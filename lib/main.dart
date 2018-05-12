@@ -44,7 +44,7 @@ class MyHomePage extends StatelessWidget {
           store: store,
           child: new Scaffold(
         appBar: new AppBar(
-          title: new Text("Flutter Redxu"),
+          title: new Text("Flutter Redux"),
         ),
         body: new Center(
           child: new Column(
