@@ -2,6 +2,22 @@ import 'package:flutter/material.dart';
 
 void main() => runApp(new MyApp());
 
+
+class AppState {
+  int counter;
+  AppState(this.counter);
+}
+
+enum Actions { Increment }
+
+AppState reducer(AppState prev,action) {
+  if(action == Actions.Increment) {
+    return new AppState(prev.counter+1);
+  }
+  else 
+  return prev;
+} 
+
 class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
